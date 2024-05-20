@@ -1,0 +1,13 @@
+<h1 class="m-3">Stupid Coaching</h1>
+
+<h3 class="m-3"><%=
+  if @answer == 'I am going to work'
+    'Great!'
+  elsif @answer.include?('?')
+    'Silly question, get dressed and go to work!'
+  else
+    "I don't care, get dressed and go to work!"
+  end %>
+</h3>
+
+<p class="m-3"><%= link_to 'ask a new question', '/ask'%></p>
